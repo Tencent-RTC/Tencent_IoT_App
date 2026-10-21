@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "TXIoTDemo"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "TXIoTDemo"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "TXIoTDemo"
+    },
+    {
+      "name": "camera_reason",
+      "value": "用于扫描设备二维码和实时视频预览"
+    },
+    {
+      "name": "microphone_reason",
+      "value": "用于设备对讲功能"
+    },
+    {
+      "name": "internet_reason",
+      "value": "用于连接设备和云服务"
+    }
+  ]
+}

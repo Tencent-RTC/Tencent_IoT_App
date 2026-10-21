@@ -6,6 +6,7 @@ struct LoginView: View {
     @State private var appKey = ""
     @State private var appSecret = ""
     @State private var userId = ""
+    @State private var selectedRegionIndex = 0
 
     @State private var showAlert = false
     @State private var alertMessage = ""
@@ -101,6 +102,46 @@ struct LoginView: View {
                 text: $appSecret,
                 icon: "lock.fill"
             )
+            .padding(.bottom, 16)
+
+            VStack(alignment: .leading, spacing: 8) {
+                Text(L("Login Region"))
+                    .font(.system(size: 13, weight: .bold))
+                    .foregroundColor(.textPrimary)
+
+                Picker(selection: $selectedRegionIndex) {
+                    Text(L("Domestic")).tag(0)
+                    Text(L("Overseas")).tag(1)
+                } label: {
+                    HStack(spacing: 12) {
+                        Image(systemName: "globe")
+                            .font(.system(size: 16))
+                            .foregroundColor(.textSecondary)
+                            .frame(width: 18)
+
+                        Text(selectedRegionIndex == 0 ? L("Domestic") : L("Overseas"))
+                            .font(.system(size: 15))
+                            .foregroundColor(.textPrimary)
+
+                        Spacer()
+
+                        Image(systemName: "chevron.down")
+                            .font(.system(size: 12, weight: .medium))
+                            .foregroundColor(.textSecondary)
+                    }
+                    .padding(.horizontal, 16)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 52)
+                    .background(Color.inputBg)
+                    .cornerRadius(AppDesign.CornerRadius.default)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: AppDesign.CornerRadius.default)
+                            .stroke(Color.borderColor, lineWidth: 1)
+                    )
+                }
+                .pickerStyle(.menu)
+                .frame(maxWidth: .infinity)
+            }
             .padding(.bottom, 32)
 
             SolidPrimaryButton(
@@ -132,9 +173,13 @@ struct LoginView: View {
     // MARK: - Actions
 
     func handleLogin() {
-        userManager.login(appKey: appKey, appSecret: appSecret, userId: userId) {
-            success,
-            errorMessage in
+        let region: TXIoTRegion = selectedRegionIndex == 1 ? .overseas : .default
+        userManager.login(
+            appKey: appKey,
+            appSecret: appSecret,
+            userId: userId,
+            region: region
+        ) { success, errorMessage in
             if success {
                 alertMessage = L("Login successful")
                 showAlert = true

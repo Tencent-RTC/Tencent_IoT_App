@@ -25,6 +25,7 @@ import CoreTelephony
     private var pendingAppKey: String = ""
     private var pendingAppSecret: String = ""
     private var pendingUserId: String = ""
+    private var pendingRegion: TXIoTRegion = .default
     
     override init() {
         super.init()
@@ -65,8 +66,15 @@ import CoreTelephony
     ///   - appKey: 物联网平台 App Key
     ///   - appSecret: 物联网平台 App Secret（用于生成签名）
     ///   - userId: 用户ID
+    ///   - region: 登录地区
     ///   - completion: 完成回调，登录结果通过 SDK delegate 异步返回
-    func login(appKey: String, appSecret: String, userId: String, completion: @escaping (Bool, String?) -> Void) {
+    func login(
+        appKey: String,
+        appSecret: String,
+        userId: String,
+        region: TXIoTRegion,
+        completion: @escaping (Bool, String?) -> Void
+    ) {
         guard !appKey.isEmpty, !appSecret.isEmpty, !userId.isEmpty else {
             completion(false, L("AppKey, AppSecret and UserId cannot be empty"))
             return
@@ -102,8 +110,14 @@ import CoreTelephony
         pendingAppKey = appKey
         pendingAppSecret = appSecret
         pendingUserId = userId
+        pendingRegion = region
         
-        TXIoTEngine.getInstance().login(appKey, userId: userId, userSignature: userSignature)
+        TXIoTEngine.getInstance().login(
+            appKey,
+            userId: userId,
+            userSignature: userSignature,
+            region: region
+        )
     }
     
     // MARK: - OC调用此方法设置登录成功
@@ -273,7 +287,12 @@ import CoreTelephony
         }
         
         userSignature.signature = signature
-        TXIoTEngine.getInstance().login(pendingAppKey, userId: pendingUserId, userSignature: userSignature)
+        TXIoTEngine.getInstance().login(
+            pendingAppKey,
+            userId: pendingUserId,
+            userSignature: userSignature,
+            region: pendingRegion
+        )
     }
 
     /// 检查蜂窝网络是否处于受限状态（首次安装未授权网络权限场景）
@@ -287,5 +306,6 @@ import CoreTelephony
         pendingAppKey = ""
         pendingAppSecret = ""
         pendingUserId = ""
+        pendingRegion = .default
     }
 }

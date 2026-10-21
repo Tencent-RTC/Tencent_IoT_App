@@ -368,6 +368,11 @@
     <string name="iot_login_userid_hint">请输入 UserId</string>
     <string name="iot_login_appkey_hint">请输入 AppKey</string>
     <string name="iot_login_appsecret_hint">请输入 AppSecret</string>
+    <string name="iot_login_region_label">登录地区</string>
+    <string-array name="iot_login_region_options">
+        <item>国内</item>
+        <item>海外</item>
+    </string-array>
     <string name="iot_message_read">已读</string>
     <string name="iot_personal_info_title">个人信息</string>
     <string name="iot_account_info">账号信息</string>

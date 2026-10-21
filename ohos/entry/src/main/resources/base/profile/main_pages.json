@@ -1,0 +1,17 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/LoginPage",
+    "pages/DeviceListPage",
+    "pages/AddDevicePage",
+    "pages/DeviceDetailPage",
+    "pages/LampDetailPage",
+    "pages/SharePage",
+    "pages/CloudStoragePage",
+    "pages/UserProfilePage",
+    "pages/FamilyManagePage",
+    "pages/DevicePropertiesPage",
+    "pages/MessageListPage",
+    "pages/CallPage"
+  ]
+}

@@ -142,8 +142,14 @@ class LoginActivity : BaseActivity<IotActivityLoginBinding>() {
         param["Nonce"] = signature.nonce
         param["OpenID"] = userId
         signature.signature = SignatureUtil.signature(SignatureUtil.format(param), appSecret)
+        val overseaPosition = 1
+        val region = if (binding.iotSpLoginRegion.selectedItemPosition == overseaPosition) {
+            TXIoTEngine.TXIoTRegion.OVERSEAS
+        } else {
+            TXIoTEngine.TXIoTRegion.DEFAULT
+        }
         TXIoTEngine.getInstance(this).addListener(loginListener)
-        TXIoTEngine.getInstance(this).login(appKey, userId, signature)
+        TXIoTEngine.getInstance(this).login(appKey, userId, signature, region)
     }
 
     private fun showLoginLoading(loading: Boolean) {

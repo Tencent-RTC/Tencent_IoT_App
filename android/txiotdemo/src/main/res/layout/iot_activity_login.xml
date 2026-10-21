@@ -173,7 +173,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:layout_marginBottom="32dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/iot_bg_login_input"
                 android:gravity="center_vertical"
                 android:paddingHorizontal="16dp">
@@ -191,6 +191,35 @@
                     android:textColor="#15161A"
                     android:textColorHint="#C8CDD8"
                     android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/iot_tv_login_region_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:labelFor="@id/iot_sp_login_region"
+                android:text="@string/iot_login_region_label"
+                android:textColor="#15161A"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/iot_bg_login_input"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp">
+
+                <Spinner
+                    android:id="@+id/iot_sp_login_region"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/iot_login_region_options"
+                    android:gravity="center_vertical"
+                    android:popupBackground="#FFFFFF"
+                    android:spinnerMode="dropdown" />
             </LinearLayout>
 
             <FrameLayout
