@@ -651,9 +651,8 @@ extension CallManager: TXIoTCallDelegate {
         Task { @MainActor in
             let text = L("Error (%@): %@", "\(errorCode.rawValue)", "\(errorMessage)")
             withAnimation { toastMessage = text }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { [weak self] in
-                withAnimation { self?.toastMessage = nil }
-            }
+            try? await Task.sleep(nanoseconds: 3_000_000_000)
+            withAnimation { toastMessage = nil }
         }
     }
 

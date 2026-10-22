@@ -1,0 +1,50 @@
+platform :ios, '15.6'
+
+target 'TXIoTDemo' do
+  use_frameworks! :linkage => :static
+
+  pod 'TXLiteAVSDK_IOT', '13.5.25024'
+
+end
+
+post_install do |installer|
+  # podspec 未声明部署目标的默认为 8.0，超出 Xcode 支持范围，统一对齐 app 的 15.6
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.6'
+    end
+  end
+
+  # TXLiteAVSDK_IOT 头文件与新 Xcode (iOS 27 SDK / Swift 6 显式模块) 的兼容性修复
+  xcframework = File.join(
+    installer.sandbox.root, 'TXLiteAVSDK_IOT', 'TXLiteAVSDK_IOT',
+    'TXLiteAVSDK_IOT.xcframework'
+  )
+  Dir.glob(File.join(xcframework, '*-*/TXLiteAVSDK_IOT.framework')).each do |fw|
+    headers = File.join(fw, 'Headers')
+
+    # 1. TXTrackInfo.h 的 isEqual: 与 NSObject 声明 nullability 冲突（hard error）
+    track_info = File.join(headers, 'TXTrackInfo.h')
+    if File.exist?(track_info)
+      content = File.read(track_info)
+      patched = content.sub(
+        '- (bool)isEqual:(TXTrackInfo *)trackInfo;',
+        '- (BOOL)isEqual:(nullable TXTrackInfo *)trackInfo;'
+      )
+      File.write(track_info, patched) if patched != content
+    end
+
+    # 2. cpp_interface 下的 C++ 头未被 umbrella header 包含，且 Swift 无法解析
+    cpp = File.join(headers, 'cpp_interface')
+    FileUtils.mv(cpp, File.join(fw, 'cpp_interface')) if File.directory?(cpp)
+
+    # 3. iOS 27 SDK 将 RPSampleBufferType 等标记 deprecated，显式模块构建的
+    #    -Werror 会将其提升为错误，在 umbrella header 顶部豁免
+    umbrella = File.join(headers, 'TXLiteAVSDK.h')
+    if File.exist?(umbrella)
+      content = File.read(umbrella)
+      pragma = '#pragma clang diagnostic ignored "-Wdeprecated-declarations"'
+      File.write(umbrella, "#{pragma}\n#{content}") unless content.start_with?(pragma)
+    end
+  end
+end
