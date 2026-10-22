@@ -51,7 +51,9 @@ repositories {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'])
+    // TXLITEAVSDK_IOT
+    implementation 'com.tencent.liteav:LiteAVSDK_IOT:13.5.0.25011'
+
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.activity:activity-ktx:1.8.0'
     implementation 'androidx.core:core-ktx:1.6.0'

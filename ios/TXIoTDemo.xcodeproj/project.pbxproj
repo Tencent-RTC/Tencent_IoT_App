@@ -21,8 +21,7 @@
 		114932A52F603A0D009FC75A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114932A42F603A0D009FC75A /* SystemConfiguration.framework */; };
 		11D2CE522F9B767D00602741 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D2CE512F9B767D00602741 /* CoreML.framework */; };
 		11D2D0002FA1FD0F00602741 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D2CFFF2FA1FD0F00602741 /* libz.tbd */; };
-		499AEBD82F62B7D60027B5B3 /* TXFFmpeg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493BD0742F62A56E006DBBE2 /* TXFFmpeg.framework */; };
-		499AEBD92F62B7D60027B5B3 /* TXFFmpeg.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 493BD0742F62A56E006DBBE2 /* TXFFmpeg.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65DDA09A9B5A733152F03522 /* Pods_TXIoTDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82C00FE83FB56CD1E8AB4CF /* Pods_TXIoTDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,7 +31,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				499AEBD92F62B7D60027B5B3 /* TXFFmpeg.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,9 +53,9 @@
 		114932A42F603A0D009FC75A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		11D2CE512F9B767D00602741 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		11D2CFFF2FA1FD0F00602741 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		493BD0742F62A56E006DBBE2 /* TXFFmpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TXFFmpeg.framework; path = TXIoTDemo/trtcsdk/TXFFmpeg.framework; sourceTree = "<group>"; };
-		493BD0752F62A56E006DBBE2 /* TXSoundTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TXSoundTouch.framework; path = TXIoTDemo/trtcsdk/TXSoundTouch.framework; sourceTree = "<group>"; };
-		493BD0782F62A576006DBBE2 /* TXLiteAVSDK_Professional.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TXLiteAVSDK_Professional.framework; path = TXIoTDemo/trtcsdk/TXLiteAVSDK_Professional.framework; sourceTree = "<group>"; };
+		1CE32413CEB502C714DCAAEC /* Pods-TXIoTDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXIoTDemo.release.xcconfig"; path = "Target Support Files/Pods-TXIoTDemo/Pods-TXIoTDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C82C00FE83FB56CD1E8AB4CF /* Pods_TXIoTDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TXIoTDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E538E88DE7DF3C8CC78A056D /* Pods-TXIoTDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXIoTDemo.debug.xcconfig"; path = "Target Support Files/Pods-TXIoTDemo/Pods-TXIoTDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -70,27 +68,11 @@
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		5448BA3C30275CC200F687C2 /* Exceptions for "TXIoTDemo" folder in "Embed Frameworks" phase from "TXIoTDemo" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			attributesByRelativePath = {
-				trtcsdk/TXLiteAVSDK_IOT.framework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
-				trtcsdk/TXSoundTouch.framework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
-			};
-			buildPhase = 499AEBDC2F62B7D60027B5B3 /* Embed Frameworks */;
-			membershipExceptions = (
-				trtcsdk/TXLiteAVSDK_IOT.framework,
-				trtcsdk/TXSoundTouch.framework,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1149322C2F601AFF009FC75A /* TXIoTDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				114932412F601B00009FC75A /* Exceptions for "TXIoTDemo" folder in "TXIoTDemo" target */,
-				5448BA3C30275CC200F687C2 /* Exceptions for "TXIoTDemo" folder in "Embed Frameworks" phase from "TXIoTDemo" target */,
 			);
 			path = TXIoTDemo;
 			sourceTree = "<group>";
@@ -112,11 +94,11 @@
 				114932A22F6039BA009FC75A /* libsqlite3.tbd in Frameworks */,
 				114932972F603991009FC75A /* CoreTelephony.framework in Frameworks */,
 				114932A32F6039C2009FC75A /* libc++.tbd in Frameworks */,
-				499AEBD82F62B7D60027B5B3 /* TXFFmpeg.framework in Frameworks */,
 				114932912F603962009FC75A /* MetalKit.framework in Frameworks */,
 				114932952F603988009FC75A /* GLKit.framework in Frameworks */,
 				114932A12F6039B1009FC75A /* Accelerate.framework in Frameworks */,
 				114932992F60399A009FC75A /* CoreServices.framework in Frameworks */,
+				65DDA09A9B5A733152F03522 /* Pods_TXIoTDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +111,7 @@
 				1149322C2F601AFF009FC75A /* TXIoTDemo */,
 				1149328D2F603958009FC75A /* Frameworks */,
 				1149322B2F601AFF009FC75A /* Products */,
+				920555437EBCD6E5B6AF966A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,15 +136,22 @@
 				114932982F60399A009FC75A /* CoreServices.framework */,
 				114932962F603991009FC75A /* CoreTelephony.framework */,
 				114932942F603988009FC75A /* GLKit.framework */,
-				493BD0742F62A56E006DBBE2 /* TXFFmpeg.framework */,
-				493BD0782F62A576006DBBE2 /* TXLiteAVSDK_Professional.framework */,
-				493BD0752F62A56E006DBBE2 /* TXSoundTouch.framework */,
 				114932932F603977009FC75A /* libc++.tbd */,
 				114932922F60396C009FC75A /* libsqlite3.tbd */,
 				114932902F603962009FC75A /* MetalKit.framework */,
 				1149328E2F603958009FC75A /* MetalPerformanceShaders.framework */,
+				C82C00FE83FB56CD1E8AB4CF /* Pods_TXIoTDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		920555437EBCD6E5B6AF966A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E538E88DE7DF3C8CC78A056D /* Pods-TXIoTDemo.debug.xcconfig */,
+				1CE32413CEB502C714DCAAEC /* Pods-TXIoTDemo.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,10 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 114932422F601B00009FC75A /* Build configuration list for PBXNativeTarget "TXIoTDemo" */;
 			buildPhases = (
+				3C27E21DA0349CDB5D6B0F44 /* [CP] Check Pods Manifest.lock */,
 				114932262F601AFF009FC75A /* Sources */,
 				114932272F601AFF009FC75A /* Frameworks */,
 				114932282F601AFF009FC75A /* Resources */,
 				499AEBDC2F62B7D60027B5B3 /* Embed Frameworks */,
+				D0852A808E3B57E0B730A3B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,8 +176,6 @@
 				1149322C2F601AFF009FC75A /* TXIoTDemo */,
 			);
 			name = TXIoTDemo;
-			packageProductDependencies = (
-			);
 			productName = TXIoTDemo;
 			productReference = 1149322A2F601AFF009FC75A /* TXIoTDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -235,6 +225,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3C27E21DA0349CDB5D6B0F44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TXIoTDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0852A808E3B57E0B730A3B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TXIoTDemo/Pods-TXIoTDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TXIoTDemo/Pods-TXIoTDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TXIoTDemo/Pods-TXIoTDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		114932262F601AFF009FC75A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -248,6 +280,7 @@
 /* Begin XCBuildConfiguration section */
 		114932432F601B00009FC75A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E538E88DE7DF3C8CC78A056D /* Pods-TXIoTDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -258,10 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5GHU44CJHG;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/TXIoTDemo/trtcsdk",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TXIoTDemo/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TXIoTDemo/Info.plist;
@@ -274,17 +304,21 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.iot.appdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Wildcard_20260824;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.tencent.iot.appdemo_IOS_APP_DEVELOPMENT;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "TXIoTDemo/SwiftUI/TXIoTDemo-Bridging-Header.h";
@@ -296,6 +330,7 @@
 		};
 		114932442F601B00009FC75A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CE32413CEB502C714DCAAEC /* Pods-TXIoTDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,10 +341,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5GHU44CJHG;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/TXIoTDemo/trtcsdk",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TXIoTDemo/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TXIoTDemo/Info.plist;
@@ -322,17 +354,21 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.iot.appdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Wildcard_20260824;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.tencent.iot.appdemo_IOS_APP_DEVELOPMENT;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "TXIoTDemo/SwiftUI/TXIoTDemo-Bridging-Header.h";
@@ -379,7 +415,7 @@
 				DEVELOPMENT_TEAM = 4NAPJ2RN5M;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -443,7 +479,7 @@
 				DEVELOPMENT_TEAM = 4NAPJ2RN5M;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
