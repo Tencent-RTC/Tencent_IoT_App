@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.iot.aiglasses.components.FlowScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <com.tencent.iot.aiglasses.components.SessionHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="实时翻译" />
+
+    <LinearLayout
+        android:id="@+id/languageBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <com.tencent.iot.aiglasses.features.translation.LanguageTrigger
+            android:id="@+id/sourceTrigger"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/swapButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="交换语言"
+            android:padding="9dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mi_arrow_forward"
+            app:tint="@color/accent" />
+
+        <com.tencent.iot.aiglasses.features.translation.LanguageTrigger
+            android:id="@+id/targetTrigger"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <com.tencent.iot.aiglasses.components.InlineHint
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:visibility="gone" />
+
+    <com.tencent.iot.aiglasses.features.translation.CaptionTranscript
+        android:id="@+id/transcript"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1" />
+
+    <com.tencent.iot.aiglasses.components.LiveControlBar
+        android:id="@+id/liveBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+</com.tencent.iot.aiglasses.components.FlowScreen>

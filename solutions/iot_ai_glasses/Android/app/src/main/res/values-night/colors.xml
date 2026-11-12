@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#070708</color>
+    <color name="surface">#101010</color>
+    <color name="surface_raised">#141513</color>
+    <color name="line">#252822</color>
+    <color name="separator">#252822</color>
+
+    <color name="text_primary">#F4F6F0</color>
+    <color name="text_secondary">#9BA19B</color>
+
+    <color name="accent">#D2EDAD</color>
+    <color name="accent_soft">#1D2618</color>
+    <color name="accent_text">#D2EDAD</color>
+    <color name="on_accent">#172212</color>
+
+    <color name="success">#D2EDAD</color>
+    <color name="danger">#EFB7AC</color>
+
+    <color name="tab_selected_background">#D2EDAD</color>
+    <color name="tab_selected_foreground">#172212</color>
+
+    <color name="toggle_on">#AEC78D</color>
+    <color name="toggle_off">#4A565D</color>
+    <color name="toggle_knob_on">#172212</color>
+    <color name="toggle_knob_off">#EAF2ED</color>
+
+    <color name="hero_background">#0A0A0A</color>
+
+    <color name="notice">#182013</color>
+    <color name="notice_border">#3B4C2E</color>
+    <color name="notice_text">#D2EDAD</color>
+    <color name="notice_dot">#D2EDAD</color>
+
+    <color name="scrim">#AA000000</color>
+    <color name="sheet">#181B16</color>
+    <color name="sheet_border">#394330</color>
+    <color name="checkbox_border">#4A565D</color>
+    <color name="icon_muted">#9BA19B</color>
+
+    <color name="caption_card">#141715</color>
+    <color name="caption_border">#2A302A</color>
+    <color name="caption_time">#929B8E</color>
+    <color name="caption_text">#EEF1E9</color>
+    <color name="caption_source">#A4ADA1</color>
+    <color name="caption_return_background">#2A3521</color>
+    <color name="caption_return_border">#485C34</color>
+    <color name="caption_return_text">#D2EDAD</color>
+    <color name="caption_error_background">#241B18</color>
+    <color name="caption_error_border">#5B3F34</color>
+    <color name="caption_error_text">#EFBBAB</color>
+    <color name="caption_warn_background">#272215</color>
+    <color name="caption_warn_border">#584B2C</color>
+    <color name="caption_warn_text">#E8D298</color>
+
+    <color name="picker_trigger_open">#181A17</color>
+    <color name="picker_selected_background">#1D2618</color>
+    <color name="picker_selected_text">#D2EDAD</color>
+    <color name="picker_menu_shadow">#38000000</color>
+
+    <color name="badge_on_background">#9E0A0C07</color>
+    <color name="badge_on_border">#24F4F6F0</color>
+    <color name="badge_on_text">#D2EDAD</color>
+    <color name="badge_neutral_background">#9E0A0C07</color>
+    <color name="badge_neutral_border">#24F4F6F0</color>
+    <color name="badge_neutral_text">#D2EDAD</color>
+    <color name="badge_off_background">#9E0A0C07</color>
+    <color name="badge_off_border">#24F4F6F0</color>
+    <color name="badge_off_text">#EFB7AC</color>
+    <color name="badge_shadow">#61000000</color>
+    <color name="ripple">#1FFFFFFF</color>
+    <color name="button_disabled_solid">#66D2EDAD</color>
+    <color name="toast_shadow">#00000000</color>
+    <color name="hero_shadow">#00000000</color>
+    <color name="caption_latest_active_card">#2E2418</color>
+    <color name="caption_latest_active_border">#5A4326</color>
+    <color name="caption_latest_active_tag">#E8A184</color>
+    <color name="record_badge_text">#E8A184</color>
+    <color name="record_badge_bg">#3A2A22</color>
+    <color name="lang_box_background">#1B1E1A</color>
+    <color name="live_bar_background">#141513</color>
+    <color name="live_bar_button_background">#1B1E1A</color>
+</resources>
