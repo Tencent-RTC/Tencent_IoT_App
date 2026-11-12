@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.iot.aiglasses.components.FlowScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tencent.iot.aiglasses.components.PageHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        app:backLabel="返回首页"
+        app:title="语音通话" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="1dp">
+
+            <LinearLayout
+                android:id="@+id/fieldsCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/roomInput"
+                    android:text="房间号"
+                    android:textAppearance="@style/TextAppearance.Suisheng.CaptionMedium"
+                    android:textColor="@color/text_secondary" />
+
+                <EditText
+                    android:id="@+id/roomInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_input"
+                    android:hint="输入房间号"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="text|textNoSuggestions"
+                    android:maxLines="1"
+                    android:minHeight="44dp"
+                    android:paddingStart="12dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="10dp"
+                    android:textAppearance="@style/TextAppearance.Suisheng.BodyMedium"
+                    android:textColorHint="@color/text_secondary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:labelFor="@id/userInput"
+                    android:text="用户 ID"
+                    android:textAppearance="@style/TextAppearance.Suisheng.CaptionMedium"
+                    android:textColor="@color/text_secondary" />
+
+                <EditText
+                    android:id="@+id/userInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_input"
+                    android:hint="输入你的用户 ID"
+                    android:imeOptions="actionGo"
+                    android:importantForAutofill="no"
+                    android:inputType="text|textNoSuggestions"
+                    android:maxLines="1"
+                    android:minHeight="44dp"
+                    android:paddingStart="12dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="10dp"
+                    android:textAppearance="@style/TextAppearance.Suisheng.BodyMedium"
+                    android:textColorHint="@color/text_secondary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:lineSpacingExtra="3dp"
+                    android:text="对方进入同一房间号即可通话。纯数字按数字房间号进房，否则按字符串房间号。"
+                    android:textAppearance="@style/TextAppearance.Suisheng.Caption"
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+
+            <com.tencent.iot.aiglasses.components.SettingsGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp">
+
+                <com.tencent.iot.aiglasses.components.SettingRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/menu_glasses"
+                    app:title="眼镜通话">
+
+                    <com.tencent.iot.aiglasses.components.StatusDot
+                        android:id="@+id/connectedDot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:text="已连接" />
+
+                    <Button
+                        android:id="@+id/connectButton"
+                        style="@style/Widget.Suisheng.Button.Pill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="连接眼镜" />
+                </com.tencent.iot.aiglasses.components.SettingRow>
+            </com.tencent.iot.aiglasses.components.SettingsGroup>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/blockedReason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:accessibilityLiveRegion="polite"
+        android:textAppearance="@style/TextAppearance.Suisheng.Caption"
+        android:textColor="@color/danger"
+        android:visibility="gone" />
+
+    <com.tencent.iot.aiglasses.components.ActionButton
+        android:id="@+id/joinButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        app:icon="@drawable/icon_call"
+        app:text="进入房间" />
+</com.tencent.iot.aiglasses.components.FlowScreen>

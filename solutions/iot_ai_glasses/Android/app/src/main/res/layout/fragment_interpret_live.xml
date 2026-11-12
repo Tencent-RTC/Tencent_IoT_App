@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.iot.aiglasses.components.FlowScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <com.tencent.iot.aiglasses.components.LiveHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:title="双向传译" />
+
+    <LinearLayout
+        android:id="@+id/speakingSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp" />
+
+    <com.tencent.iot.aiglasses.components.InlineHint
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <com.tencent.iot.aiglasses.features.translation.CaptionTranscript
+        android:id="@+id/transcript"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:clipChildren="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.tencent.iot.aiglasses.components.AudioWave
+            android:id="@+id/wave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/pauseButton"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:contentDescription="暂停同传"
+            android:padding="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_pause" />
+
+        <com.tencent.iot.aiglasses.components.AudioWave
+            android:id="@+id/waveMirror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="-1" />
+    </LinearLayout>
+</com.tencent.iot.aiglasses.components.FlowScreen>

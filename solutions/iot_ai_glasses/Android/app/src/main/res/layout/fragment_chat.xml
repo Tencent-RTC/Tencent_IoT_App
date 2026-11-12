@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.iot.aiglasses.components.FlowScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tencent.iot.aiglasses.components.SessionHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        app:title="AI 对话" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="132dp"
+                android:layout_height="132dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/art_chat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="有什么想问的？"
+                android:textAppearance="@style/TextAppearance.Suisheng.BodyMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="对眼镜说出问题，回答会显示在这里"
+                android:textAppearance="@style/TextAppearance.Suisheng.Caption"
+                android:textColor="@color/text_secondary" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/thread"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:overScrollMode="ifContentScrolls"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:scrollbars="none"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <com.tencent.iot.aiglasses.components.InlineHint
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+    <com.tencent.iot.aiglasses.components.LiveControlBar
+        android:id="@+id/liveBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+</com.tencent.iot.aiglasses.components.FlowScreen>

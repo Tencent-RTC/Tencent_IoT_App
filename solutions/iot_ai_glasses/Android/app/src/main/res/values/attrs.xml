@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TabScreen">
+        <attr name="spacing" format="dimension" />
+        <attr name="reservesTabBar" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ScreenTitle">
+        <attr name="title" format="string" />
+        <attr name="trailingText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PageHeader">
+        <attr name="title" />
+        <attr name="backLabel" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleIconButton">
+        <attr name="icon" format="reference" />
+        <attr name="circleStyle" format="enum">
+            <enum name="raised" value="0" />
+            <enum name="plain" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SettingRow">
+        <attr name="icon" />
+        <attr name="title" />
+        <attr name="showsDivider" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ActionButton">
+        <attr name="icon" />
+        <attr name="text" format="string" />
+        <attr name="variant" format="enum">
+            <enum name="primary" value="0" />
+            <enum name="secondary" value="1" />
+        </attr>
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="labelSize" format="dimension" />
+        <attr name="labelWeight" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="StatusDot">
+        <attr name="text" />
+        <attr name="dotColor" format="color" />
+    </declare-styleable>
+</resources>

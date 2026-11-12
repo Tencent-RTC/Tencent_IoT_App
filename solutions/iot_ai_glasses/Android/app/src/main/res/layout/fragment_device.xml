@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.iot.aiglasses.components.TabScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:spacing="0dp">
+
+    <com.tencent.iot.aiglasses.components.ScreenTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:title="我的眼镜" />
+
+    <com.tencent.iot.aiglasses.components.ProductHero
+        android:id="@+id/hero"
+        android:layout_width="match_parent"
+        android:layout_height="176dp" />
+
+    <com.tencent.iot.aiglasses.features.device.DeviceRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="设备连接">
+
+        <Button
+            android:id="@+id/connectButton"
+            style="@style/Widget.Suisheng.Button.SmallOutline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.tencent.iot.aiglasses.features.device.DeviceRow>
+
+    <com.tencent.iot.aiglasses.features.device.DeviceRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="眼镜麦克风">
+
+        <TextView
+            android:id="@+id/micStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:paddingStart="9dp"
+            android:paddingEnd="9dp"
+            android:textAppearance="@style/TextAppearance.Suisheng"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp" />
+    </com.tencent.iot.aiglasses.features.device.DeviceRow>
+</com.tencent.iot.aiglasses.components.TabScreen>

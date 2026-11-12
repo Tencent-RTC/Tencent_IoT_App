@@ -1,0 +1,2 @@
+rootProject.name = 'IoTAIGlasses'
+include ':app'

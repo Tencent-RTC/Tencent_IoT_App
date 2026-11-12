@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Suisheng.Button" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:drawablePadding">9dp</item>
+    </style>
+
+    <style name="Widget.Suisheng.Button.Primary">
+        <item name="android:textAppearance">@style/TextAppearance.Suisheng.Button</item>
+        <item name="android:textColor">@color/button_primary_text</item>
+        <item name="android:background">@drawable/bg_button_primary</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:elevation">@dimen/elevation_primary_glow</item>
+        <item name="android:outlineSpotShadowColor">@color/primary_glow</item>
+        <item name="android:outlineAmbientShadowColor">@color/primary_glow</item>
+    </style>
+
+    <style name="Widget.Suisheng.Button.Pill">
+        <item name="android:textAppearance">@style/TextAppearance.Suisheng.CaptionMedium</item>
+        <item name="android:textColor">@color/accent_text</item>
+        <item name="android:background">@drawable/bg_button_pill</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+    </style>
+
+    <style name="Widget.Suisheng.Button.Sheet">
+        <item name="android:textAppearance">@style/TextAppearance.Suisheng.Callout</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:background">@drawable/bg_button_sheet</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Widget.Suisheng.Button.Primary.Sheet">
+        <item name="android:textAppearance">@style/TextAppearance.Suisheng.SheetAction</item>
+        <item name="android:background">@drawable/bg_button_primary_sheet</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Widget.Suisheng.Button.Danger.Sheet" parent="Widget.Suisheng.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Suisheng.SheetAction</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/bg_button_danger_sheet</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Widget.Suisheng.Button.SmallOutline">
+        <item name="android:textAppearance">@style/TextAppearance.Suisheng.Caption</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:background">@drawable/bg_button_small_outline</item>
+        <item name="android:minWidth">46dp</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+    </style>
+</resources>

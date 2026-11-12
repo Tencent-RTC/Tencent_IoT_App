@@ -1,0 +1,22 @@
+PODS:
+  - TXLiteAVSDK_Professional (13.6.21648):
+    - TXLiteAVSDK_Professional/Professional (= 13.6.21648)
+  - TXLiteAVSDK_Professional/Professional (13.6.21648)
+  - TXLiteAVSDK_VoiceAI_iOS (13.6.0.255)
+
+DEPENDENCIES:
+  - TXLiteAVSDK_Professional (= 13.6.21648)
+  - TXLiteAVSDK_VoiceAI_iOS (= 13.6.0.255)
+
+SPEC REPOS:
+  trunk:
+    - TXLiteAVSDK_Professional
+    - TXLiteAVSDK_VoiceAI_iOS
+
+SPEC CHECKSUMS:
+  TXLiteAVSDK_Professional: 86ee81dfad0bd9c72079e8ad0e33f18b54721ec0
+  TXLiteAVSDK_VoiceAI_iOS: 08554396687d92e3b4870c12b030d46ac0246de1
+
+PODFILE CHECKSUM: 18c00427e801b9a475aab4e7f6b45e40d82560a3
+
+COCOAPODS: 1.17.0

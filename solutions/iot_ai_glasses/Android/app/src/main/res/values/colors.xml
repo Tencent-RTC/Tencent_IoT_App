@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#EEEEF3</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_raised">#FFFFFF</color>
+    <color name="line">#141C1C28</color>
+    <color name="separator">#0F1C1C28</color>
+
+    <color name="glass_strong">#FFFFFF</color>
+    <color name="glass_border">#FFFFFF</color>
+    <color name="speaker_background">#F3F3F6</color>
+
+    <color name="text_primary">#16161D</color>
+    <color name="text_secondary">#8B8D98</color>
+
+    <color name="accent">#F2762E</color>
+    <color name="accent_soft">#FDE7DA</color>
+    <color name="accent_text">#E0631F</color>
+    <color name="on_accent">#FFFFFF</color>
+
+    <color name="success">#1F8A5A</color>
+    <color name="success_dot">#22B26E</color>
+    <color name="danger">#E04B3A</color>
+
+    <color name="tab_selected_background">#FDE7DA</color>
+    <color name="tab_selected_foreground">#E0631F</color>
+
+    <color name="toggle_on">#F2762E</color>
+    <color name="toggle_off">#DCDCE3</color>
+    <color name="toggle_knob_on">#FFFFFF</color>
+    <color name="toggle_knob_off">#FFFFFF</color>
+
+    <color name="primary_gradient_start">#F5853F</color>
+    <color name="primary_gradient_end">#F06A24</color>
+    <color name="primary_glow">#4DF2762E</color>
+
+    <color name="hero_background">#FAFAFA</color>
+
+    <color name="notice">#FDE7DA</color>
+    <color name="notice_border">#F9D2BD</color>
+    <color name="notice_text">#E0631F</color>
+    <color name="notice_dot">#F2762E</color>
+
+    <color name="scrim">#4016161D</color>
+    <color name="sheet">#FFFFFF</color>
+    <color name="sheet_border">#FFFFFF</color>
+    <color name="checkbox_border">#CACAD3</color>
+    <color name="icon_muted">#9EA0AA</color>
+
+    <color name="caption_card">#FFFFFF</color>
+    <color name="caption_border">#FFFFFF</color>
+    <color name="caption_time">#9EA0AA</color>
+    <color name="caption_text">#16161D</color>
+    <color name="caption_source">#6E717C</color>
+    <color name="caption_return_background">#FFFFFF</color>
+    <color name="caption_return_border">#FFFFFF</color>
+    <color name="caption_return_text">#E0631F</color>
+    <color name="caption_error_background">#CCFFEEF0</color>
+    <color name="caption_error_border">#B3F0B4BC</color>
+    <color name="caption_error_text">#C0404E</color>
+    <color name="caption_warn_background">#C7FFF6E2</color>
+    <color name="caption_warn_border">#99F0D696</color>
+    <color name="caption_warn_text">#8A6D2A</color>
+
+    <color name="picker_trigger_open">#14F2762E</color>
+    <color name="picker_selected_background">#FDE7DA</color>
+    <color name="picker_selected_text">#E0631F</color>
+    <color name="picker_menu_shadow">#241C1C28</color>
+
+    <color name="badge_on_background">#D9E5F7EE</color>
+    <color name="badge_on_border">#E6FFFFFF</color>
+    <color name="badge_on_text">#1F8A5A</color>
+    <color name="badge_neutral_background">#E6FFFFFF</color>
+    <color name="badge_neutral_border">#E6FFFFFF</color>
+    <color name="badge_neutral_text">#3A3C46</color>
+    <color name="badge_off_background">#D9FFEEF0</color>
+    <color name="badge_off_border">#1AC0404E</color>
+    <color name="badge_off_text">#C0404E</color>
+    <color name="badge_shadow">#1A1C1C28</color>
+    <color name="ripple">#14000000</color>
+    <color name="shadow_card">#0F1C1C28</color>
+    <color name="shadow_raised">#141C1C28</color>
+    <color name="shadow_floating">#241C1C28</color>
+    <color name="button_disabled_gradient_start">#66F5853F</color>
+    <color name="button_disabled_gradient_end">#66F06A24</color>
+    <color name="button_disabled_solid">#66F2762E</color>
+    <color name="launcher_background">#F2593D</color>
+    <color name="toast_shadow">#241C1C28</color>
+    <color name="hero_shadow">#0F1C1C28</color>
+    <color name="white_alpha_12">#1FFFFFFF</color>
+    <color name="icon_tint_purple">#5B4CF0</color>
+    <color name="icon_bg_purple">#EEEBFE</color>
+    <color name="icon_tint_blue">#2F6BD8</color>
+    <color name="icon_bg_blue">#E9F1FE</color>
+    <color name="icon_tint_green">#1F8A5A</color>
+    <color name="icon_bg_green">#E4F5EC</color>
+    <color name="icon_tint_orange">#E8722C</color>
+    <color name="icon_bg_orange">#FFF0E4</color>
+    <color name="caption_latest_active_card">#FDE7DA</color>
+    <color name="caption_latest_active_border">#F5BFA0</color>
+    <color name="caption_latest_active_tag">#F2762E</color>
+    <color name="record_badge_text">#D9552E</color>
+    <color name="record_badge_bg">#FDEDE3</color>
+    <color name="live_bar_background">#FFFFFF</color>
+    <color name="live_bar_button_background">#F3F3F6</color>
+    <color name="lang_box_background">#F3F3F6</color>
+    <color name="call_hangup">#EF4B55</color>
+</resources>
