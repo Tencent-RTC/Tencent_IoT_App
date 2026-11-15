@@ -37,7 +37,7 @@ android {
 }
 
 dependencies {
-    implementation("com.tencent.liteav:LiteAVSDK_IOT:13.5.0.25011")
+    implementation(files("libs/LiteAVSDK_IOT_13.4.0.25071.aar"))
     implementation("androidx.core:core-ktx:1.10.1")
     implementation("androidx.activity:activity-ktx:1.7.2")
     implementation("androidx.appcompat:appcompat:1.6.1")

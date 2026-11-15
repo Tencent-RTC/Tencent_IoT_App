@@ -80,10 +80,10 @@ solutions/watch/
 
 | 平台 | IoT／TRTC SDK | IM SDK |
 | --- | --- | --- |
-| Android | `com.tencent.liteav:LiteAVSDK_IOT:13.5.0.25011` | `com.tencent.imsdk:imsdk-plus:9.0.7652` |
+| Android | `android/app/libs/LiteAVSDK_IOT_13.4.0.25071.aar` | `com.tencent.imsdk:imsdk-plus:9.0.7652` |
 | iOS | CocoaPods `TXLiteAVSDK_IOT`，版本由 `ios/Podfile.lock` 锁定 | CocoaPods `TXIMSDK_Plus_iOS_XCFramework`，版本由 `ios/Podfile.lock` 锁定 |
 
-iOS 工程应通过 `ios/WatchApp.xcworkspace` 打开。`ios/Pods/` 是 CocoaPods 生成目录，不属于源码模块；Android 的 IoT／TRTC SDK 和 IM SDK 均由 Gradle 从 Maven 下载。
+iOS 工程应通过 `ios/WatchApp.xcworkspace` 打开。`ios/Pods/` 是 CocoaPods 生成目录，不属于源码模块；Android 的 IoT／TRTC AAR 由 Gradle 从 `android/app/libs/` 引用，IM SDK 从 Maven 下载。
 
 ## 3. Android 结构
 
@@ -438,10 +438,10 @@ iOS 对应目录为 `Watch/`。这部分只依赖本地绑定数据和页面资�
 
 | 平台 | 工程入口 | 依赖入口 |
 | --- | --- | --- |
-| Android | `android/gradlew`、`android/settings.gradle.kts` | `android/app/build.gradle.kts`，Maven 依赖在此声明 |
+| Android | `android/gradlew`、`android/settings.gradle.kts` | `android/app/build.gradle.kts`，本地 AAR 和 Maven 依赖在此声明 |
 | iOS | `ios/WatchApp.xcworkspace` | `ios/Podfile`、`ios/Podfile.lock` |
 
-iOS 执行 `pod install` 后使用 Workspace，不使用裸的 `WatchApp.xcodeproj` 编译。Android 使用 Gradle Wrapper，并在首次编译时从 Maven 下载 SDK。
+iOS 执行 `pod install` 后使用 Workspace，不使用裸的 `WatchApp.xcodeproj` 编译。Android 使用 Gradle Wrapper，IoT／TRTC 使用仓库内的本地 AAR。
 
 ### 8.3 测试入口
 

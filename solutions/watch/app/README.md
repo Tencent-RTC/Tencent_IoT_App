@@ -40,7 +40,7 @@
 | Android SDK | compile／target SDK 34 |
 | 真机 | Android 10（API 29）及以上的 `arm64-v8a` 真机，已开启 USB 调试 |
 
-工程自带 Gradle Wrapper，Android IoT／TRTC SDK 和 IMSDK 均从 Maven 联网下载。当前 IoT／TRTC SDK 版本为 `com.tencent.liteav:LiteAVSDK_IOT:13.5.0.25011`，IMSDK 版本由 `android/app/build.gradle.kts` 固定。
+工程自带 Gradle Wrapper，Android IoT／TRTC SDK 使用仓库内的 `android/app/libs/LiteAVSDK_IOT_13.4.0.25071.aar`，IMSDK 从 Maven 联网下载。
 
 | 工具 | 要求 |
 | --- | --- |
@@ -48,7 +48,7 @@
 | iOS SDK | 15.0 及以上 |
 | 真机 | 已完成开发者账号签名配置的 iPhone |
 
-工程通过 CocoaPods 集成 IoT／TRTC 和 IM SDK。首次编译前请在 `ios` 目录执行 `pod install`，然后使用生成的 `WatchApp.xcworkspace` 打开工程。
+工程通过 CocoaPods 集成 iOS IoT／TRTC 和 IM SDK。首次编译前请在 `ios` 目录执行 `pod install`，然后使用生成的 `WatchApp.xcworkspace` 打开工程。
 
 **说明：**
 
