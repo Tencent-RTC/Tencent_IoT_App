@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center_vertical|center_horizontal" android:width="5dp" android:height="18dp"><shape><solid android:color="#6BDCC7" /><corners android:radius="3dp" /></shape></item>
+    <item android:gravity="center_vertical" android:left="24dp" android:width="5dp" android:height="30dp"><shape><solid android:color="#6BDCC7" /><corners android:radius="3dp" /></shape></item>
+    <item android:gravity="center_vertical" android:left="48dp" android:width="5dp" android:height="22dp"><shape><solid android:color="#6BDCC7" /><corners android:radius="3dp" /></shape></item>
+    <item android:gravity="center_vertical" android:left="72dp" android:width="5dp" android:height="36dp"><shape><solid android:color="#6BDCC7" /><corners android:radius="3dp" /></shape></item>
+    <item android:gravity="center_vertical" android:left="96dp" android:width="5dp" android:height="22dp"><shape><solid android:color="#6BDCC7" /><corners android:radius="3dp" /></shape></item>
+    <item android:gravity="center_vertical" android:left="120dp" android:width="5dp" android:height="30dp"><shape><solid android:color="#6BDCC7" /><corners android:radius="3dp" /></shape></item>
+</layer-list>

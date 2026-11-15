@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+project_dir="$(cd "$(dirname "$0")" && pwd)"
+gradle_version="7.6"
+gradle_home="${GRADLE_USER_HOME:-$project_dir/.gradle}"
+distribution_root="$gradle_home/wrapper/dists/gradle-${gradle_version}-bin"
+distribution_dir="$distribution_root/gradle-${gradle_version}"
+archive="$project_dir/.gradle/gradle-${gradle_version}-bin.zip"
+
+if [[ ! -x "$distribution_dir/bin/gradle" ]]; then
+  mkdir -p "$distribution_root" "$project_dir/.gradle"
+  if [[ ! -f "$archive" ]]; then
+    curl -fL --retry 2 -o "$archive" "https://services.gradle.org/distributions/gradle-${gradle_version}-bin.zip"
+  fi
+  rm -rf "$distribution_root/unpacked"
+  mkdir -p "$distribution_root/unpacked"
+  unzip -q -o "$archive" -d "$distribution_root/unpacked"
+  mv "$distribution_root/unpacked/gradle-${gradle_version}" "$distribution_dir"
+  rm -rf "$distribution_root/unpacked"
+fi
+
+exec "$distribution_dir/bin/gradle" "$@"

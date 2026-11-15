@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@drawable/watch_message_row"
+    android:clickable="true"
+    android:clipChildren="false"
+    android:focusable="true"
+    android:paddingStart="14dp"
+    android:paddingEnd="14dp">
+
+    <FrameLayout
+        android:id="@+id/watch_message_dynamic_avatar_wrap"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:clipChildren="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/watch_message_dynamic_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/watch_messages"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/watch_message_dynamic_unread"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_gravity="top|end"
+            android:background="@drawable/watch_unread_badge"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:minWidth="18dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:translationX="7dp"
+            android:translationY="-4dp"
+            android:textColor="@color/watch_surface"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/watch_message_dynamic_meta"
+        app:layout_constraintStart_toEndOf="@id/watch_message_dynamic_avatar_wrap"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/watch_message_dynamic_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/watch_text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/watch_message_dynamic_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/watch_text_secondary"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/watch_message_dynamic_meta"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="top|end"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/watch_message_dynamic_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/watch_text_tertiary"
+            android:textSize="11sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

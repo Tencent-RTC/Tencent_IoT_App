@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:background="@android:color/transparent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:id="@+id/watch_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/watch_tab_bar"
+        android:elevation="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <LinearLayout
+            android:id="@+id/watch_tab_messages"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/watch_tab_item"
+            android:gravity="center"
+            android:orientation="vertical"
+                android:paddingTop="8dp">
+            <ImageView
+                android:id="@+id/watch_tab_messages_icon"
+                android:layout_width="18dp"
+                android:layout_height="17dp"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/watch_icon_nav_messages_design" />
+            <TextView
+                android:id="@+id/watch_tab_messages_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/watch_messages"
+                android:textColor="@color/watch_text_secondary"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/watch_tab_location"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/watch_tab_item"
+            android:gravity="center"
+            android:orientation="vertical"
+                android:paddingTop="8dp">
+            <ImageView
+                android:id="@+id/watch_tab_location_icon"
+                android:layout_width="16dp"
+                android:layout_height="20dp"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/watch_icon_nav_location_design" />
+            <TextView
+                android:id="@+id/watch_tab_location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/watch_location"
+                android:textColor="@color/watch_text_secondary"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/watch_tab_call"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/watch_tab_call_button"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/watch_call_button"
+                android:contentDescription="@string/watch_call"
+                android:elevation="10dp"
+                android:padding="14dp"
+                android:src="@drawable/watch_icon_nav_call_design" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/watch_tab_devices"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/watch_tab_item"
+            android:gravity="center"
+            android:orientation="vertical"
+                android:paddingTop="8dp">
+            <ImageView
+                android:id="@+id/watch_tab_devices_icon"
+                android:layout_width="16dp"
+                android:layout_height="20dp"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/watch_icon_nav_devices_design" />
+            <TextView
+                android:id="@+id/watch_tab_devices_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/watch_devices"
+                android:textColor="@color/watch_text_secondary"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/watch_tab_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/watch_tab_item"
+            android:gravity="center"
+            android:orientation="vertical"
+                android:paddingTop="8dp">
+            <ImageView
+                android:id="@+id/watch_tab_profile_icon"
+                android:layout_width="18dp"
+                android:layout_height="20dp"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/watch_icon_nav_profile_design" />
+            <TextView
+                android:id="@+id/watch_tab_profile_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/watch_profile"
+                android:textColor="@color/watch_text_secondary"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

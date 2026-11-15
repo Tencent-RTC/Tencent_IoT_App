@@ -1,0 +1,4 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="18dp" android:height="18dp" android:viewportWidth="18" android:viewportHeight="18">
+    <path android:fillColor="@color/watch_trust_blue" android:pathData="M9,0A9,9 0,1 0,9 18A9,9 0,1 0,9 0" />
+    <path android:fillColor="@color/watch_surface" android:pathData="M4.3,9.1l1.2,-1.2 2.2,2.2 4.8,-4.8 1.2,1.2 -6,6z" />
+</vector>

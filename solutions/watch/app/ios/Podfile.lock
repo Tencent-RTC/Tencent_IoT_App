@@ -1,0 +1,25 @@
+PODS:
+  - TXIMSDK_Plus_iOS_XCFramework (9.1.7834)
+  - TXLiteAVSDK_IOT (13.4.0.25030):
+    - TXLiteAVSDK_IOT/IOT (= 13.4.0.25030)
+  - TXLiteAVSDK_IOT/IOT (13.4.0.25030)
+
+DEPENDENCIES:
+  - TXIMSDK_Plus_iOS_XCFramework
+  - TXLiteAVSDK_IOT (from `https://liteav.sdk.qcloud.com/pod/liteavsdkspec/customer/TXLiteAVSDK_IOT_13.4.0.25030.podspec`)
+
+SPEC REPOS:
+  trunk:
+    - TXIMSDK_Plus_iOS_XCFramework
+
+EXTERNAL SOURCES:
+  TXLiteAVSDK_IOT:
+    :podspec: https://liteav.sdk.qcloud.com/pod/liteavsdkspec/customer/TXLiteAVSDK_IOT_13.4.0.25030.podspec
+
+SPEC CHECKSUMS:
+  TXIMSDK_Plus_iOS_XCFramework: 38bceee3fe1cbf283fca82d1140b5016d7113436
+  TXLiteAVSDK_IOT: e8ca150c47d53e58442637d04531cc8e89313ac4
+
+PODFILE CHECKSUM: f50bc9b86fb8ed5aadd5f31951304e023f53228a
+
+COCOAPODS: 1.16.2

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/watch_outgoing_call_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/watch_call_dark">
+
+    <ImageView
+        android:id="@+id/watch_call_avatar_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+    <View
+        android:id="@+id/watch_call_avatar_scrim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/watch_call_avatar_scrim"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/watch_call_stage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/watch_call_local_mom" />
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/watch_call_remote_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/watch_call_local_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    <View
+        android:id="@+id/watch_call_video_overlay_top"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/watch_call_video_top_overlay"
+        android:contentDescription="@null" />
+    <View
+        android:id="@+id/watch_call_video_overlay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/watch_call_video_bottom_overlay"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:id="@+id/watch_call_nav"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/watch_call_nav_back"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/watch_call_nav_button"
+            android:contentDescription="@string/watch_back"
+            android:padding="9dp"
+            android:src="@drawable/watch_icon_back_light" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/watch_call_nav_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/watch_surface"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/watch_call_nav_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/watch_call_text_secondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <View android:layout_width="36dp" android:layout_height="36dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/watch_call_video_wait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="272dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/watch_call_video_wait_avatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@null"
+            android:scaleType="centerInside" />
+        <TextView
+            android:id="@+id/watch_call_video_wait_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/watch_surface"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/watch_call_voice_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="175dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:background="@drawable/watch_call_avatar_ring">
+            <ImageView
+                android:id="@+id/watch_call_voice_avatar"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:scaleType="centerInside" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/watch_call_voice_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/watch_surface"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/watch_call_voice_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/watch_call_status_pill"
+            android:paddingStart="12dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="6dp"
+            android:textColor="@color/watch_call_text_secondary"
+            android:textSize="13sp" />
+        <View
+            android:id="@+id/watch_call_voice_wave"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="82dp"
+            android:background="@drawable/watch_call_voice_wave"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/watch_call_local_pip"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/watch_call_pip"
+        android:padding="2dp"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="我"
+            android:textColor="@color/watch_surface"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/watch_call_dock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/watch_call_dock"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+        <LinearLayout
+            android:id="@+id/watch_call_video_tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <include layout="@layout/watch_call_voice_tool_mute" />
+            <include layout="@layout/watch_call_voice_tool_speaker" />
+            <include layout="@layout/watch_call_tool_flip" />
+            <include layout="@layout/watch_call_tool_camera" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/watch_call_voice_tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <include layout="@layout/watch_call_tool_mute" />
+            <include layout="@layout/watch_call_tool_speaker" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/watch_call_main_action"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/watch_call_action_cancel"
+            android:gravity="center"
+            android:text="@string/watch_cancel"
+            android:textColor="@color/watch_surface"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</FrameLayout>

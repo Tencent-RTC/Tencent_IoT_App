@@ -1,0 +1,4 @@
+这是 ASR3602 临时发布包中的占位库。
+
+libtc_iot_sdk.a 和 libim.a 当前来自 ESP32 发布包，当前 e_machine=243，不能直接用于 ASR3602，也不代表 ASR3602 ABI 兼容。
+临时占位模式跳过 ASR ARM 架构校验；正式发布或客户编译前，必须替换为与客户 ASR3602 基线、编译器和平台 SDK 匹配的库，并重新检查 e_machine=40。

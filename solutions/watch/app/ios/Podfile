@@ -1,0 +1,18 @@
+platform :ios, '15.6'
+
+project 'WatchApp/WatchApp.xcodeproj'
+
+target 'WatchApp' do
+  use_frameworks!
+
+  pod 'TXLiteAVSDK_IOT', :podspec => 'https://liteav.sdk.qcloud.com/pod/liteavsdkspec/customer/TXLiteAVSDK_IOT_13.4.0.25030.podspec'
+  pod 'TXIMSDK_Plus_iOS_XCFramework'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.6'
+    end
+  end
+end

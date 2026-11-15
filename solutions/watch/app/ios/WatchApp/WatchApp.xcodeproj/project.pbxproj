@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62DA96E0A3A0971C09C859C5 /* Pods_WatchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842488D9976845F967B8A45D /* Pods_WatchApp.framework */; };
+		A10000010000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000001 /* AppDelegate.swift */; };
+		A10000010000000000000002 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000002 /* SceneDelegate.swift */; };
+		A10000010000000000000003 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000003 /* RootViewController.swift */; };
+		A10000010000000000000004 /* AppStateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000004 /* AppStateStore.swift */; };
+		A10000010000000000000005 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000005 /* Theme.swift */; };
+		A10000010000000000000006 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000006 /* LoginViewController.swift */; };
+		A10000010000000000000007 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000007 /* MainTabViewController.swift */; };
+		A10000010000000000000008 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000008 /* MessagesViewController.swift */; };
+		A10000010000000000000009 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000009 /* LocationViewController.swift */; };
+		A1000001000000000000000A /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001000000000000000A /* DevicesViewController.swift */; };
+		A1000001000000000000000B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001000000000000000B /* ProfileViewController.swift */; };
+		A1000001000000000000000C /* WatchLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001000000000000000C /* WatchLogger.swift */; };
+		A1000001000000000000000D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1000001000000000000000D /* Localizable.strings */; };
+		A1000001000000000000000E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000010 /* Assets.xcassets */; };
+		A1000001000000000000000F /* CallTargetPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000011 /* CallTargetPickerViewController.swift */; };
+		A10000010000000000000010 /* OutgoingCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000012 /* OutgoingCallViewController.swift */; };
+		A10000010000000000000014 /* IotCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000014 /* IotCredentials.swift */; };
+		A10000010000000000000015 /* TrtcSignatureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000015 /* TrtcSignatureProvider.swift */; };
+		A10000010000000000000016 /* IoTSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000016 /* IoTSession.swift */; };
+		A10000010000000000000018 /* CallMediaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000018 /* CallMediaSession.swift */; };
+		A10000010000000000000019 /* IncomingCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000019 /* IncomingCallViewController.swift */; };
+		A1000001000000000000001A /* WatchSdkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001000000000000001A /* WatchSdkConfig.swift */; };
+		A1000001000000000000001B /* ImSdkAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001000000000000001B /* ImSdkAuth.swift */; };
+		A1000001000000000000001C /* MessageConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001000000000000001C /* MessageConversation.swift */; };
+		A1000001000000000000001D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001000000000000001D /* ChatViewController.swift */; };
+		A1000001000000000000001E /* ChatInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001000000000000001E /* ChatInfoViewController.swift */; };
+		A1000001000000000000001F /* ImService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001000000000000001F /* ImService.swift */; };
+		A10000010000000000000023 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000023 /* AddContactViewController.swift */; };
+		A10000010000000000000024 /* WatchQrScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000024 /* WatchQrScannerViewController.swift */; };
+		A10000010000000000000025 /* CallSignal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000025 /* CallSignal.swift */; };
+		A10000010000000000000026 /* CallSignaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000026 /* CallSignaling.swift */; };
+		A10000010000000000000027 /* WatchBindingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000027 /* WatchBindingStore.swift */; };
+		A10000010000000000000028 /* BindWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000028 /* BindWatchViewController.swift */; };
+		A10000010000000000000029 /* WatchAvatarResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000029 /* WatchAvatarResolver.swift */; };
+		A1000001000000000000002A /* GroupMemberPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001000000000000002A /* GroupMemberPickerViewController.swift */; };
+		A1000001000000000000002B /* ImCallSignalTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001000000000000002B /* ImCallSignalTransport.swift */; };
+		A1000001000000000000002C /* CallCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001000000000000002C /* CallCoordinator.swift */; };
+		A1000001000000000000002D /* ConversationMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001000000000000002D /* ConversationMapper.swift */; };
+		A1000001000000000000002E /* CallVideoSurface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001000000000000002E /* CallVideoSurface.swift */; };
+		A1000001000000000000002F /* IotSessionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001000000000000002F /* IotSessionConfig.swift */; };
+		A10000010000000000000030 /* WatchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000030 /* WatchAppUITests.swift */; };
+		A10000010000000000000031 /* CallStateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000032 /* CallStateStore.swift */; };
+		A10000010000000000000033 /* WatchMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000033 /* WatchMapView.swift */; };
+		A10000010000000000000034 /* GroupAvatarComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000034 /* GroupAvatarComposer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C10000010000000000000003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F10000010000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E10000010000000000000001;
+			remoteInfo = WatchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		609D28388021285CF44BB73F /* Pods-WatchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchApp.release.xcconfig"; path = "Target Support Files/Pods-WatchApp/Pods-WatchApp.release.xcconfig"; sourceTree = "<group>"; };
+		6A2F7087EA9D7D26D9E389BF /* Pods-WatchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchApp.debug.xcconfig"; path = "Target Support Files/Pods-WatchApp/Pods-WatchApp.debug.xcconfig"; sourceTree = "<group>"; };
+		842488D9976845F967B8A45D /* Pods_WatchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000010000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B10000010000000000000002 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B10000010000000000000003 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		B10000010000000000000004 /* AppStateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateStore.swift; sourceTree = "<group>"; };
+		B10000010000000000000005 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		B10000010000000000000006 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B10000010000000000000007 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		B10000010000000000000008 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		B10000010000000000000009 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		B1000001000000000000000A /* DevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
+		B1000001000000000000000B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B1000001000000000000000C /* WatchLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchLogger.swift; sourceTree = "<group>"; };
+		B1000001000000000000000D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		B1000001000000000000000E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1000001000000000000000F /* WatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000010000000000000010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B10000010000000000000011 /* CallTargetPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTargetPickerViewController.swift; sourceTree = "<group>"; };
+		B10000010000000000000012 /* OutgoingCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutgoingCallViewController.swift; sourceTree = "<group>"; };
+		B10000010000000000000014 /* IotCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IotCredentials.swift; sourceTree = "<group>"; };
+		B10000010000000000000015 /* TrtcSignatureProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrtcSignatureProvider.swift; sourceTree = "<group>"; };
+		B10000010000000000000016 /* IoTSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IoTSession.swift; sourceTree = "<group>"; };
+		B10000010000000000000018 /* CallMediaSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallMediaSession.swift; sourceTree = "<group>"; };
+		B10000010000000000000019 /* IncomingCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingCallViewController.swift; sourceTree = "<group>"; };
+		B1000001000000000000001A /* WatchSdkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSdkConfig.swift; sourceTree = "<group>"; };
+		B1000001000000000000001B /* ImSdkAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImSdkAuth.swift; sourceTree = "<group>"; };
+		B1000001000000000000001C /* MessageConversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageConversation.swift; sourceTree = "<group>"; };
+		B1000001000000000000001D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B1000001000000000000001E /* ChatInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfoViewController.swift; sourceTree = "<group>"; };
+		B1000001000000000000001F /* ImService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImService.swift; sourceTree = "<group>"; };
+		B10000010000000000000023 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		B10000010000000000000024 /* WatchQrScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchQrScannerViewController.swift; sourceTree = "<group>"; };
+		B10000010000000000000025 /* CallSignal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSignal.swift; sourceTree = "<group>"; };
+		B10000010000000000000026 /* CallSignaling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSignaling.swift; sourceTree = "<group>"; };
+		B10000010000000000000027 /* WatchBindingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchBindingStore.swift; sourceTree = "<group>"; };
+		B10000010000000000000028 /* BindWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindWatchViewController.swift; sourceTree = "<group>"; };
+		B10000010000000000000029 /* WatchAvatarResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAvatarResolver.swift; sourceTree = "<group>"; };
+		B1000001000000000000002A /* GroupMemberPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMemberPickerViewController.swift; sourceTree = "<group>"; };
+		B1000001000000000000002B /* ImCallSignalTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImCallSignalTransport.swift; sourceTree = "<group>"; };
+		B1000001000000000000002C /* CallCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallCoordinator.swift; sourceTree = "<group>"; };
+		B1000001000000000000002D /* ConversationMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationMapper.swift; sourceTree = "<group>"; };
+		B1000001000000000000002E /* CallVideoSurface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallVideoSurface.swift; sourceTree = "<group>"; };
+		B1000001000000000000002F /* IotSessionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IotSessionConfig.swift; sourceTree = "<group>"; };
+		B10000010000000000000030 /* WatchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAppUITests.swift; sourceTree = "<group>"; };
+		B10000010000000000000032 /* CallStateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallStateStore.swift; sourceTree = "<group>"; };
+		B10000010000000000000033 /* WatchMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchMapView.swift; sourceTree = "<group>"; };
+		B10000010000000000000034 /* GroupAvatarComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAvatarComposer.swift; sourceTree = "<group>"; };
+		EF15EFE930A9F43D0031EE3A /* WatchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C10000010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62DA96E0A3A0971C09C859C5 /* Pods_WatchApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10000010000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2161CDA961E4051234725392 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				842488D9976845F967B8A45D /* Pods_WatchApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		776AA83BE7093A1BA9D7B5F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A2F7087EA9D7D26D9E389BF /* Pods-WatchApp.debug.xcconfig */,
+				609D28388021285CF44BB73F /* Pods-WatchApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		D10000010000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				D10000010000000000000002 /* WatchApp */,
+				D10000010000000000000007 /* WatchAppUITests */,
+				D10000010000000000000003 /* Products */,
+				776AA83BE7093A1BA9D7B5F0 /* Pods */,
+				2161CDA961E4051234725392 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D10000010000000000000002 /* WatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				D10000010000000000000004 /* Sources */,
+				D10000010000000000000005 /* zh-Hans.lproj */,
+				B10000010000000000000010 /* Assets.xcassets */,
+				B1000001000000000000000E /* Info.plist */,
+			);
+			path = WatchApp;
+			sourceTree = "<group>";
+		};
+		D10000010000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1000001000000000000000F /* WatchApp.app */,
+				EF15EFE930A9F43D0031EE3A /* WatchAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D10000010000000000000004 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D10000010000000000000008 /* App */,
+				D10000010000000000000009 /* Call */,
+				D1000001000000000000000A /* Config */,
+				D1000001000000000000000B /* IM */,
+				D1000001000000000000000C /* Watch */,
+				D1000001000000000000000D /* UI */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D10000010000000000000005 /* zh-Hans.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				B1000001000000000000000D /* Localizable.strings */,
+			);
+			path = "Resources/zh-Hans.lproj";
+			sourceTree = "<group>";
+		};
+		D10000010000000000000007 /* WatchAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B10000010000000000000030 /* WatchAppUITests.swift */,
+			);
+			path = WatchAppUITests;
+			sourceTree = "<group>";
+		};
+		D10000010000000000000008 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B10000010000000000000001 /* AppDelegate.swift */,
+				B10000010000000000000002 /* SceneDelegate.swift */,
+				B10000010000000000000003 /* RootViewController.swift */,
+				B10000010000000000000004 /* AppStateStore.swift */,
+				B10000010000000000000006 /* LoginViewController.swift */,
+				B10000010000000000000007 /* MainTabViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D10000010000000000000009 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				B10000010000000000000011 /* CallTargetPickerViewController.swift */,
+				B10000010000000000000012 /* OutgoingCallViewController.swift */,
+				B10000010000000000000032 /* CallStateStore.swift */,
+				B10000010000000000000018 /* CallMediaSession.swift */,
+				B10000010000000000000019 /* IncomingCallViewController.swift */,
+				B10000010000000000000025 /* CallSignal.swift */,
+				B10000010000000000000026 /* CallSignaling.swift */,
+				B1000001000000000000002C /* CallCoordinator.swift */,
+				B1000001000000000000002E /* CallVideoSurface.swift */,
+				B1000001000000000000002F /* IotSessionConfig.swift */,
+				B10000010000000000000014 /* IotCredentials.swift */,
+				B10000010000000000000015 /* TrtcSignatureProvider.swift */,
+				B10000010000000000000016 /* IoTSession.swift */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
+		D1000001000000000000000A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B1000001000000000000001A /* WatchSdkConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D1000001000000000000000B /* IM */ = {
+			isa = PBXGroup;
+			children = (
+				B1000001000000000000001B /* ImSdkAuth.swift */,
+				B1000001000000000000001C /* MessageConversation.swift */,
+				B1000001000000000000001D /* ChatViewController.swift */,
+				B1000001000000000000001E /* ChatInfoViewController.swift */,
+				B1000001000000000000001F /* ImService.swift */,
+				B1000001000000000000002B /* ImCallSignalTransport.swift */,
+				B1000001000000000000002D /* ConversationMapper.swift */,
+				B1000001000000000000002A /* GroupMemberPickerViewController.swift */,
+			);
+			path = IM;
+			sourceTree = "<group>";
+		};
+		D1000001000000000000000C /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				B10000010000000000000023 /* AddContactViewController.swift */,
+				B10000010000000000000024 /* WatchQrScannerViewController.swift */,
+				B10000010000000000000033 /* WatchMapView.swift */,
+				B10000010000000000000034 /* GroupAvatarComposer.swift */,
+				B10000010000000000000027 /* WatchBindingStore.swift */,
+				B10000010000000000000028 /* BindWatchViewController.swift */,
+				B10000010000000000000029 /* WatchAvatarResolver.swift */,
+				B10000010000000000000009 /* LocationViewController.swift */,
+				B1000001000000000000000A /* DevicesViewController.swift */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		D1000001000000000000000D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B10000010000000000000005 /* Theme.swift */,
+				B10000010000000000000008 /* MessagesViewController.swift */,
+				B1000001000000000000000B /* ProfileViewController.swift */,
+				B1000001000000000000000C /* WatchLogger.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E10000010000000000000001 /* WatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10000010000000000000003 /* Build configuration list for PBXNativeTarget "WatchApp" */;
+			buildPhases = (
+				E0A378C664B8475092D6C9DC /* [CP] Check Pods Manifest.lock */,
+				E10000010000000000000004 /* Sources */,
+				C10000010000000000000001 /* Frameworks */,
+				E10000010000000000000005 /* Resources */,
+				50CB546A25F66C1720C43867 /* [CP] Embed Pods Frameworks */,
+				15FF452E6D8C3E8E5AE59DE7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatchApp;
+			productName = WatchApp;
+			productReference = B1000001000000000000000F /* WatchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E10000010000000000000010 /* WatchAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10000010000000000000012 /* Build configuration list for PBXNativeTarget "WatchAppUITests" */;
+			buildPhases = (
+				E10000010000000000000013 /* Sources */,
+				C10000010000000000000002 /* Frameworks */,
+				E10000010000000000000014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E10000010000000000000015 /* PBXTargetDependency */,
+			);
+			name = WatchAppUITests;
+			productName = WatchAppUITests;
+			productReference = EF15EFE930A9F43D0031EE3A /* WatchAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F10000010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					E10000010000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					E10000010000000000000010 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = E10000010000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = E10000010000000000000002 /* Build configuration list for PBXProject "WatchApp" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				Base,
+			);
+			mainGroup = D10000010000000000000001;
+			productRefGroup = D10000010000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E10000010000000000000001 /* WatchApp */,
+				E10000010000000000000010 /* WatchAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E10000010000000000000005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001000000000000000D /* Localizable.strings in Resources */,
+				A1000001000000000000000E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10000010000000000000014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15FF452E6D8C3E8E5AE59DE7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchApp/Pods-WatchApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchApp/Pods-WatchApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchApp/Pods-WatchApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50CB546A25F66C1720C43867 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchApp/Pods-WatchApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchApp/Pods-WatchApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchApp/Pods-WatchApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0A378C664B8475092D6C9DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E10000010000000000000004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000010000000000000001 /* AppDelegate.swift in Sources */,
+				A10000010000000000000002 /* SceneDelegate.swift in Sources */,
+				A10000010000000000000003 /* RootViewController.swift in Sources */,
+				A10000010000000000000004 /* AppStateStore.swift in Sources */,
+				A10000010000000000000005 /* Theme.swift in Sources */,
+				A10000010000000000000006 /* LoginViewController.swift in Sources */,
+				A10000010000000000000007 /* MainTabViewController.swift in Sources */,
+				A1000001000000000000000F /* CallTargetPickerViewController.swift in Sources */,
+				A10000010000000000000010 /* OutgoingCallViewController.swift in Sources */,
+				A10000010000000000000008 /* MessagesViewController.swift in Sources */,
+				A10000010000000000000009 /* LocationViewController.swift in Sources */,
+				A1000001000000000000000A /* DevicesViewController.swift in Sources */,
+				A1000001000000000000000B /* ProfileViewController.swift in Sources */,
+				A1000001000000000000000C /* WatchLogger.swift in Sources */,
+				A10000010000000000000014 /* IotCredentials.swift in Sources */,
+				A10000010000000000000015 /* TrtcSignatureProvider.swift in Sources */,
+				A1000001000000000000001A /* WatchSdkConfig.swift in Sources */,
+				A1000001000000000000001B /* ImSdkAuth.swift in Sources */,
+				A10000010000000000000016 /* IoTSession.swift in Sources */,
+				A10000010000000000000018 /* CallMediaSession.swift in Sources */,
+				A10000010000000000000019 /* IncomingCallViewController.swift in Sources */,
+				A1000001000000000000001C /* MessageConversation.swift in Sources */,
+				A1000001000000000000001D /* ChatViewController.swift in Sources */,
+				A1000001000000000000001E /* ChatInfoViewController.swift in Sources */,
+				A1000001000000000000001F /* ImService.swift in Sources */,
+				A10000010000000000000023 /* AddContactViewController.swift in Sources */,
+				A10000010000000000000024 /* WatchQrScannerViewController.swift in Sources */,
+				A10000010000000000000025 /* CallSignal.swift in Sources */,
+				A10000010000000000000026 /* CallSignaling.swift in Sources */,
+				A1000001000000000000002B /* ImCallSignalTransport.swift in Sources */,
+				A1000001000000000000002C /* CallCoordinator.swift in Sources */,
+				A1000001000000000000002E /* CallVideoSurface.swift in Sources */,
+				A1000001000000000000002F /* IotSessionConfig.swift in Sources */,
+				A10000010000000000000031 /* CallStateStore.swift in Sources */,
+				A1000001000000000000002D /* ConversationMapper.swift in Sources */,
+				A10000010000000000000027 /* WatchBindingStore.swift in Sources */,
+				A10000010000000000000028 /* BindWatchViewController.swift in Sources */,
+				A10000010000000000000029 /* WatchAvatarResolver.swift in Sources */,
+				A1000001000000000000002A /* GroupMemberPickerViewController.swift in Sources */,
+				A10000010000000000000033 /* WatchMapView.swift in Sources */,
+				A10000010000000000000034 /* GroupAvatarComposer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10000010000000000000013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000010000000000000030 /* WatchAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E10000010000000000000015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E10000010000000000000001 /* WatchApp */;
+			targetProxy = C10000010000000000000003 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E10000010000000000000006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"OTHER_LDFLAGS[sdk=iphoneos*]" = (
+					"-ObjC",
+					"-framework",
+					CoreMotion,
+					"-framework",
+					MetalKit,
+					"-framework",
+					MetalPerformanceShaders,
+					"-framework",
+					ReplayKit,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Accelerate,
+					"-lz",
+					"-lsqlite3",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.iot.watchapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E10000010000000000000007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				"OTHER_LDFLAGS[sdk=iphoneos*]" = (
+					"-ObjC",
+					"-framework",
+					CoreMotion,
+					"-framework",
+					MetalKit,
+					"-framework",
+					MetalPerformanceShaders,
+					"-framework",
+					ReplayKit,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Accelerate,
+					"-lz",
+					"-lsqlite3",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.iot.watchapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E10000010000000000000008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A2F7087EA9D7D26D9E389BF /* Pods-WatchApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"OTHER_LDFLAGS[sdk=iphoneos*]" = (
+					"-ObjC",
+					"-framework",
+					CoreMotion,
+					"-framework",
+					MetalKit,
+					"-framework",
+					MetalPerformanceShaders,
+					"-framework",
+					ReplayKit,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Accelerate,
+					"-lz",
+					"-lsqlite3",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.iot.watchapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E10000010000000000000009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 609D28388021285CF44BB73F /* Pods-WatchApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"OTHER_LDFLAGS[sdk=iphoneos*]" = (
+					"-ObjC",
+					"-framework",
+					CoreMotion,
+					"-framework",
+					MetalKit,
+					"-framework",
+					MetalPerformanceShaders,
+					"-framework",
+					ReplayKit,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Accelerate,
+					"-lz",
+					"-lsqlite3",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.iot.watchapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E10000010000000000000016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"@loader_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.iot.watchapp.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = WatchApp;
+			};
+			name = Debug;
+		};
+		E10000010000000000000017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"@loader_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.iot.watchapp.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = WatchApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E10000010000000000000002 /* Build configuration list for PBXProject "WatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10000010000000000000006 /* Debug */,
+				E10000010000000000000007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E10000010000000000000003 /* Build configuration list for PBXNativeTarget "WatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10000010000000000000008 /* Debug */,
+				E10000010000000000000009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E10000010000000000000012 /* Build configuration list for PBXNativeTarget "WatchAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10000010000000000000016 /* Debug */,
+				E10000010000000000000017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F10000010000000000000001 /* Project object */;
+}
