@@ -1,0 +1,8 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="54dp" android:gravity="center_vertical" android:orientation="horizontal">
+    <FrameLayout android:layout_width="32dp" android:layout_height="32dp" android:background="@drawable/watch_icon_tile_mint">
+        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:layout_gravity="center" android:src="@drawable/watch_icon_locator" app:tint="#12B886" />
+    </FrameLayout>
+    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="11dp" android:layout_weight="1" android:text="@string/watch_find_device" android:textColor="@color/watch_text_primary" android:textSize="13sp" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_ring_to_find" android:textColor="@color/watch_text_secondary" android:textSize="11sp" />
+    <ImageView android:layout_width="14dp" android:layout_height="14dp" android:layout_marginStart="8dp" android:src="@drawable/watch_icon_chevron_design" app:tint="@color/watch_text_tertiary" />
+</LinearLayout>

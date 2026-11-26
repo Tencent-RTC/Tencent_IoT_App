@@ -1,0 +1,32 @@
+.DS_Store
+.tmp/
+
+# Android
+.gradle/
+build/
+*/build/
+local.properties
+*.apk
+*.aab
+*.apks
+
+# Test and generated output
+*.log
+*.tmp
+captures/
+reports/
+*.hprof
+
+# iOS / Xcode
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.ipa
+*.xcarchive/
+*.dSYM/
+Pods/
+
+# Local IDE and agent state
+.idea/
+.vscode/
+.codex/

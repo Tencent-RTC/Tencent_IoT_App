@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/watch_space_8" android:background="@drawable/watch_card" android:orientation="horizontal" android:padding="@dimen/watch_space_16">
+    <ImageView android:layout_width="48dp" android:layout_height="48dp" android:contentDescription="@string/watch_avatar_spare" android:scaleType="fitCenter" android:src="@drawable/watch_avatar_lele_design" />
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/watch_watch_spare" android:textColor="@color/watch_text_primary" android:textSize="16sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/watch_offline" android:textColor="@color/watch_alert_red" android:textSize="13sp" />
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_no_value" android:textColor="@color/watch_text_tertiary" android:textSize="14sp" />
+</LinearLayout>

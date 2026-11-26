@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/watch_device_background"
+    android:fillViewport="true"
+    android:overScrollMode="never">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/watch_space_24">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/watch_space_24"
+            android:paddingEnd="@dimen/watch_space_16">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/watch_devices"
+                android:textColor="@color/watch_text_primary"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+            <ImageButton
+                android:id="@+id/watch_devices_add"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/watch_scan_title"
+                android:padding="10dp"
+                android:src="@drawable/watch_icon_scan" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/watch_devices_carousel"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="12dp"
+            android:clipToPadding="true"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+        <LinearLayout
+            android:id="@+id/watch_devices_pager"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/watch_devices_pager_dots"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/watch_devices_empty"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/watch_card"
+            android:gravity="center"
+            android:text="@string/watch_call_no_bound_watch"
+            android:textColor="@color/watch_text_secondary"
+            android:textSize="13sp"
+            android:visibility="gone" />
+        <LinearLayout
+            android:id="@+id/watch_devices_management_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/watch_device_settings_group"
+            android:orientation="vertical"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp">
+            <include layout="@layout/watch_device_setting_row_system" />
+            <include layout="@layout/watch_device_setting_row_member" />
+            <include layout="@layout/watch_device_setting_row_contacts" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/watch_devices_settings_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/watch_device_settings_group"
+            android:orientation="vertical"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp">
+            <include layout="@layout/watch_device_setting_row_apps" />
+            <include layout="@layout/watch_device_setting_row_find" />
+            <include layout="@layout/watch_device_setting_row_battery" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

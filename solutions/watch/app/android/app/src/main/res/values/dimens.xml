@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="watch_space_4">4dp</dimen>
+    <dimen name="watch_space_6">6dp</dimen>
+    <dimen name="watch_space_8">8dp</dimen>
+    <dimen name="watch_space_10">10dp</dimen>
+    <dimen name="watch_space_12">12dp</dimen>
+    <dimen name="watch_space_14">14dp</dimen>
+    <dimen name="watch_space_16">16dp</dimen>
+    <dimen name="watch_space_20">20dp</dimen>
+    <dimen name="watch_space_24">24dp</dimen>
+    <dimen name="watch_space_32">32dp</dimen>
+    <dimen name="watch_radius_12">12dp</dimen>
+    <dimen name="watch_radius_16">16dp</dimen>
+    <dimen name="watch_radius_18">18dp</dimen>
+    <dimen name="watch_radius_20">20dp</dimen>
+    <dimen name="watch_radius_24">24dp</dimen>
+    <dimen name="watch_button_height">48dp</dimen>
+    <dimen name="watch_tab_height">64dp</dimen>
+    <dimen name="watch_avatar_small">44dp</dimen>
+    <dimen name="watch_avatar_large">64dp</dimen>
+    <dimen name="watch_icon_small">20dp</dimen>
+    <dimen name="watch_icon_medium">24dp</dimen>
+    <dimen name="watch_icon_large">28dp</dimen>
+</resources>

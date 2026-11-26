@@ -1,0 +1,7 @@
+# ESP-IDF 编译产物与本地状态
+# 注意：dependencies.lock 要提交——它锁定了验证过的全部依赖组件版本。
+build/
+managed_components/
+sdkconfig
+sdkconfig.old
+.DS_Store

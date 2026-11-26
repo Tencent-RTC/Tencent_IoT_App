@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/watch_map_land">
+
+    <com.tencent.iot.watchapp.watch.WatchMapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/watch_location_title"
+        android:textColor="@color/watch_text_primary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/watch_secondary_button"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:text="@string/watch_location_help"
+        android:textAllCaps="false"
+        android:textColor="@color/watch_text_primary"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/watch_secondary_button"
+        android:gravity="center"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="@string/watch_recent_location"
+        android:textColor="@color/watch_text_primary"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical">
+        <LinearLayout android:layout_width="56dp" android:layout_height="58dp" android:background="@drawable/watch_secondary_button" android:elevation="2dp" android:gravity="center" android:orientation="vertical">
+            <ImageView android:layout_width="12dp" android:layout_height="15dp" android:scaleType="fitCenter" android:src="@drawable/watch_icon_correct_location_design" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/watch_correct_location" android:textColor="@color/watch_text_secondary" android:textSize="9sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="56dp" android:layout_height="58dp" android:layout_marginTop="8dp" android:background="@drawable/watch_secondary_button" android:elevation="2dp" android:gravity="center" android:orientation="vertical">
+            <ImageView android:layout_width="12dp" android:layout_height="12dp" android:scaleType="fitCenter" android:src="@drawable/watch_icon_navigation_design" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/watch_navigate" android:textColor="@color/watch_text_secondary" android:textSize="9sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="56dp" android:layout_height="58dp" android:layout_marginTop="8dp" android:background="@drawable/watch_secondary_button" android:elevation="2dp" android:gravity="center" android:orientation="vertical">
+            <ImageView android:layout_width="12dp" android:layout_height="15dp" android:scaleType="fitCenter" android:src="@drawable/watch_icon_find_watch_design" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/watch_find_watch" android:textColor="@color/watch_text_secondary" android:textSize="9sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/watch_location_marker"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/watch_avatar_mint"
+        android:elevation="3dp"
+        android:padding="4dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/watch_card"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/watch_bound_watches" android:textColor="@color/watch_text_secondary" android:textSize="12sp" />
+            <TextView android:id="@+id/watch_location_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_device_count" android:textColor="@color/watch_text_tertiary" android:textSize="12sp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/watch_location_carousel"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginTop="12dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never" />
+
+        <TextView
+            android:id="@+id/watch_location_empty"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:gravity="center"
+            android:text="@string/watch_call_no_bound_watch"
+            android:textColor="@color/watch_text_secondary"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/watch_location_pager"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</FrameLayout>

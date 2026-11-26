@@ -1,0 +1,4 @@
+# Git LFS: watch device SDK static libraries.
+device/asr3602/sdk/lib/*.a filter=lfs diff=lfs merge=lfs -text
+device/esp32/components/*/lib/esp32s31/*.a filter=lfs diff=lfs merge=lfs -text
+device/w317/sdk/lib/*.a filter=lfs diff=lfs merge=lfs -text

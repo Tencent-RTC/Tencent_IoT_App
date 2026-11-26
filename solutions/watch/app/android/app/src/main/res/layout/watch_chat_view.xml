@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/watch_background" android:orientation="vertical">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="60dp" android:paddingStart="12dp" android:paddingEnd="12dp">
+        <ImageButton android:id="@+id/watch_chat_back" android:layout_width="40dp" android:layout_height="40dp" android:layout_gravity="center_vertical|start" android:background="@android:color/transparent" android:contentDescription="@string/watch_chat_back" android:padding="8dp" android:src="@drawable/watch_icon_back_design" />
+        <TextView android:id="@+id/watch_chat_title" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:textColor="@color/watch_text_primary" android:textSize="19sp" android:textStyle="bold" />
+        <ImageButton android:id="@+id/watch_chat_info" android:layout_width="40dp" android:layout_height="40dp" android:layout_gravity="center_vertical|end" android:background="@android:color/transparent" android:contentDescription="@string/watch_group_info" android:padding="8dp" android:src="@drawable/watch_icon_more_design" />
+    </FrameLayout>
+
+    <ScrollView android:id="@+id/watch_chat_history" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true" android:overScrollMode="never" android:paddingStart="20dp" android:paddingEnd="20dp">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:foregroundGravity="bottom" android:gravity="bottom" android:paddingTop="8dp" android:paddingBottom="16dp">
+            <LinearLayout android:id="@+id/watch_dynamic_chat_history" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+        </FrameLayout>
+    </ScrollView>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/watch_surface" android:elevation="4dp" android:gravity="center_vertical" android:orientation="horizontal" android:paddingStart="12dp" android:paddingTop="10dp" android:paddingEnd="12dp" android:paddingBottom="10dp">
+        <ImageButton android:id="@+id/watch_chat_input_mode" android:layout_width="36dp" android:layout_height="36dp" android:background="@android:color/transparent" android:contentDescription="@string/watch_chat_switch_text" android:padding="7dp" android:src="@drawable/watch_icon_keyboard_design" />
+        <TextView android:id="@+id/watch_chat_voice_action" android:layout_width="0dp" android:layout_height="40dp" android:layout_marginStart="8dp" android:layout_weight="1" android:background="@drawable/watch_input" android:gravity="center" android:text="@string/watch_chat_switch_voice" android:textColor="@color/watch_text_primary" android:textSize="13sp" android:textStyle="bold" />
+        <EditText android:id="@+id/watch_chat_draft" android:layout_width="0dp" android:layout_height="40dp" android:layout_marginStart="8dp" android:layout_weight="1" android:background="@drawable/watch_input" android:hint="@string/watch_chat_draft_hint" android:imeOptions="actionSend" android:inputType="textCapSentences|textMultiLine" android:maxLines="2" android:paddingStart="12dp" android:paddingEnd="12dp" android:textColor="@color/watch_text_primary" android:textColorHint="@color/watch_text_tertiary" android:textSize="13sp" android:visibility="gone" />
+        <ImageButton android:id="@+id/watch_chat_send" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginStart="4dp" android:background="@android:color/transparent" android:contentDescription="@string/watch_chat_send" android:padding="7dp" android:src="@drawable/watch_icon_send_design" android:visibility="gone" />
+        <ImageButton android:layout_width="36dp" android:layout_height="36dp" android:layout_marginStart="4dp" android:background="@android:color/transparent" android:contentDescription="@string/watch_chat_emoji" android:padding="7dp" android:src="@drawable/watch_icon_emoji_design" />
+        <ImageButton android:layout_width="36dp" android:layout_height="36dp" android:background="@android:color/transparent" android:contentDescription="@string/watch_chat_more" android:padding="6dp" android:src="@drawable/watch_icon_plus_circle_design" />
+    </LinearLayout>
+</LinearLayout>

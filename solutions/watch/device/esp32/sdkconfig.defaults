@@ -1,0 +1,2 @@
+# ESP32-S31 的完整配置见 sdkconfig.defaults.esp32s31，
+# 执行 idf.py --preview set-target esp32s31 时由 ESP-IDF 自动叠加在本文件之后。

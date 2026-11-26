@@ -1,0 +1,23 @@
+## ESP-IDF 组件依赖（ESP32-S31，ESP-IDF v6.1）。版本均已固定，与验证过的固件一致。
+dependencies:
+  idf: ">=6.1"
+  # 钉在 0.8.x：registry 上 gmf_loader 1.0 会拉 esp_codec_dev 2.0.0-beta，依赖求解失败。
+  espressif/gmf_loader:
+    version: "0.8.3"
+  # 音频编解码（AAC / G.722）与 Codec 芯片驱动（ES8389）。
+  espressif/esp_audio_codec: "2.5.0"
+  espressif/esp_codec_dev: "1.6.2"
+  # 回声消除（AEC）。
+  espressif/esp-sr:
+    version: "2.4.4"
+  # 摄像头：esp_video（V4L2 采集）+ esp_cam_sensor（sc101iot）。
+  # esp_video 2.3.0 精确依赖 esp_h264 1.3.0；esp_video_codec 0.5.6+ 需要 esp_h264>=1.3.7，故钉 0.5.5。
+  espressif/esp_video:
+    version: "2.3.0"
+  espressif/esp_cam_sensor:
+    version: "2.3.0"
+  espressif/esp_video_codec:
+    version: "0.5.5"
+  # 软件 JPEG（远端画面兜底解码）。
+  espressif/esp_new_jpeg:
+    version: "1.0.2"

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/watch_background" android:fillViewport="true" android:overScrollMode="never">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="@dimen/watch_space_20" android:paddingTop="@dimen/watch_space_16" android:paddingEnd="@dimen/watch_space_20" android:paddingBottom="@dimen/watch_space_24">
+        <TextView android:layout_width="wrap_content" android:layout_height="48dp" android:gravity="center_vertical" android:text="@string/watch_profile" android:textColor="@color/watch_text_primary" android:textSize="24sp" android:textStyle="bold" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="136dp" android:layout_marginTop="8dp" android:background="@drawable/watch_gradient_card" android:elevation="4dp" android:gravity="center_vertical" android:orientation="horizontal" android:padding="18dp">
+            <ImageView android:id="@+id/watch_profile_avatar" android:layout_width="56dp" android:layout_height="56dp" android:contentDescription="@string/watch_account_name" android:scaleType="fitCenter" android:src="@drawable/watch_avatar_lele_card_design" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/watch_account_name" android:textColor="@color/watch_surface" android:textSize="20sp" android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/watch_phone_number" android:textColor="#D9E0FF" android:textSize="13sp" />
+            </LinearLayout>
+            <ImageView android:layout_width="6dp" android:layout_height="11dp" android:scaleType="fitCenter" android:src="@drawable/watch_icon_chevron_design" app:tint="@color/watch_surface" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:background="@drawable/watch_card" android:elevation="2dp" android:orientation="vertical" android:paddingStart="14dp" android:paddingEnd="14dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="58dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <FrameLayout android:layout_width="32dp" android:layout_height="32dp" android:background="@drawable/watch_icon_tile_blue" android:foregroundGravity="center">
+                    <ImageView android:layout_width="12dp" android:layout_height="15dp" android:layout_gravity="center" android:scaleType="fitCenter" android:src="@drawable/watch_icon_security_design" />
+                </FrameLayout>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:text="@string/watch_account_security" android:textColor="@color/watch_text_primary" android:textSize="14sp" />
+                <ImageView android:layout_width="6dp" android:layout_height="11dp" android:scaleType="fitCenter" android:src="@drawable/watch_icon_chevron_security_design" />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/watch_line" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="58dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <FrameLayout android:layout_width="32dp" android:layout_height="32dp" android:background="@drawable/watch_icon_tile_sky" android:foregroundGravity="center">
+                    <ImageView android:layout_width="12dp" android:layout_height="15dp" android:layout_gravity="center" android:scaleType="fitCenter" android:src="@drawable/watch_icon_notifications_design" />
+                </FrameLayout>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:text="@string/watch_notifications" android:textColor="@color/watch_text_primary" android:textSize="14sp" />
+                <ImageView android:layout_width="6dp" android:layout_height="11dp" android:scaleType="fitCenter" android:src="@drawable/watch_icon_chevron_notifications_design" />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/watch_line" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="58dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <FrameLayout android:layout_width="32dp" android:layout_height="32dp" android:background="@drawable/watch_icon_tile_mint" android:foregroundGravity="center">
+                    <ImageView android:layout_width="14dp" android:layout_height="14dp" android:layout_gravity="center" android:scaleType="fitCenter" android:src="@drawable/watch_icon_about_design" />
+                </FrameLayout>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:text="@string/watch_about" android:textColor="@color/watch_text_primary" android:textSize="14sp" />
+                <ImageView android:layout_width="6dp" android:layout_height="11dp" android:scaleType="fitCenter" android:src="@drawable/watch_icon_chevron_about_design" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:id="@+id/watch_profile_logout" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="16dp" android:background="@drawable/watch_secondary_button" android:elevation="2dp" android:text="@string/watch_logout" android:textAllCaps="false" android:textColor="@color/watch_alert_red" android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>

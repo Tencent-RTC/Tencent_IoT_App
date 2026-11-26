@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/watch_call_voice_speaker_action" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+    android:clickable="true" android:focusable="true" android:gravity="center" android:orientation="vertical">
+    <ImageView android:id="@+id/watch_call_voice_speaker_icon" android:layout_width="52dp" android:layout_height="52dp" android:background="@drawable/watch_call_control_button" android:padding="14dp" android:src="@drawable/watch_icon_speaker" app:tint="@color/watch_surface" />
+    <TextView android:id="@+id/watch_call_voice_speaker_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/watch_call_speaker" android:textColor="@color/watch_surface" android:textSize="11sp" />
+</LinearLayout>

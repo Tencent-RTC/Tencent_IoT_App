@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="watch_background">#EEF1FB</color>
+    <color name="watch_surface">#FFFFFF</color>
+    <color name="watch_surface_strong">#FFFFFF</color>
+    <color name="watch_surface_muted">#F4F6FC</color>
+    <color name="watch_text_primary">#1B2340</color>
+    <color name="watch_text_secondary">#8E97B0</color>
+    <color name="watch_text_tertiary">#AAB2C4</color>
+    <color name="watch_trust_blue">#5867F5</color>
+    <color name="watch_trust_blue_dark">#4E5DE7</color>
+    <color name="watch_trust_purple">#7B58F2</color>
+    <color name="watch_mint">#4AC8B1</color>
+    <color name="watch_mint_light">#E1F7F1</color>
+    <color name="watch_alert_red">#EA737B</color>
+    <color name="watch_line">#E1E5F0</color>
+    <color name="watch_lavender">#E8ECFF</color>
+    <color name="watch_shadow">#1A1B2340</color>
+    <color name="watch_map_land">#DDEFE8</color>
+    <color name="watch_map_road">#FFFFFF</color>
+    <color name="watch_map_road_secondary">#C9E6DD</color>
+    <color name="watch_white_08">#14FFFFFF</color>
+    <color name="watch_white_12">#1FFFFFFF</color>
+    <color name="watch_call_picker_scrim">#660F1730</color>
+    <color name="watch_call_dark">#14243E</color>
+    <color name="watch_call_text_secondary">#C5D6EF</color>
+    <color name="watch_add_section_text">#4A5372</color>
+    <color name="watch_add_divider">#F1F3F7</color>
+</resources>
