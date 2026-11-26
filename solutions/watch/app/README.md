@@ -40,7 +40,7 @@
 | Android SDK | compile／target SDK 34 |
 | 真机 | Android 10（API 29）及以上的 `arm64-v8a` 真机，已开启 USB 调试 |
 
-工程自带 Gradle Wrapper，Android IoT／TRTC SDK 使用仓库内的 `android/app/libs/LiteAVSDK_IOT_13.4.0.25071.aar`，IMSDK 从 Maven 联网下载。
+工程自带 Gradle Wrapper，Android IoT／TRTC SDK 使用仓库内的 `android/app/libs/LiteAVSDK_IOT_13.4.0.25071.aar`，IMSDK 从 Maven 联网下载。Android 和设备侧的二进制 SDK 由 Git LFS 管理，clone 后请先执行 `git lfs install` 和 `git lfs pull`。
 
 | 工具 | 要求 |
 | --- | --- |

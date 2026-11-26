@@ -441,7 +441,7 @@ iOS 对应目录为 `Watch/`。这部分只依赖本地绑定数据和页面资�
 | Android | `android/gradlew`、`android/settings.gradle.kts` | `android/app/build.gradle.kts`，本地 AAR 和 Maven 依赖在此声明 |
 | iOS | `ios/WatchApp.xcworkspace` | `ios/Podfile`、`ios/Podfile.lock` |
 
-iOS 执行 `pod install` 后使用 Workspace，不使用裸的 `WatchApp.xcodeproj` 编译。Android 使用 Gradle Wrapper，IoT／TRTC 使用仓库内的本地 AAR。
+iOS 执行 `pod install` 后使用 Workspace，不使用裸的 `WatchApp.xcodeproj` 编译。Android 使用 Gradle Wrapper，IoT／TRTC 使用仓库内的本地 AAR；Android 和设备侧二进制 SDK 由 Git LFS 管理。
 
 ### 8.3 测试入口
 
